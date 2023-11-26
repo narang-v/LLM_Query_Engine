@@ -1,3 +1,6 @@
+# This file uploads the generated embeddings present in the bb-chaabi.npy file to the collection
+# The collection is given name "bb-chaabi".
+# The queries are responded using this collection in the "search_main.py" file.
 # Libraries import
 import os.path
 import numpy as np
