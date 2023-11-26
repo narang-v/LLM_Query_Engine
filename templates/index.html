@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+    <title>Welcome to the Query Engine</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <h1>Welcome to the Query Engine</h1>
+        <form id="queryForm">
+            <label for="query">Enter your query:</label>
+            <input type="text" id="query" name="query" required onkeypress="handleKeyPress(event)">
+            <button type="button" class="button" onclick="submitQuery()">Search</button>
+            <button type="button" class="resetButton" id="resetButton" onclick="resetForm()">Reset</button>
+        </form>
+        <div id="result" data-json="{{ json_result }}"></div>
+    </div>
+</body>
+</html>
