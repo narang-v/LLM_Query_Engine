@@ -34,7 +34,9 @@
    ```
    python generate_embeddings.py
    ```
+2. To save time and computational power I am attaching a google drive link that contains "bb_chaabi_vectors.npy" file. Also the qdrant_storage folder is also available at this link with an image containing directory structure of how all the files available are arranged to run the code.
 
+   [Google Drive](https://drive.google.com/file/d/1OBXnVux4Io1Ejr6JZPsiYFRss33GI7Wx/view?usp=sharing)
 # Upload Embeddings
 1. Run the "upload_embeddings.py" file. This file will upload all your embeddings in the collection and make a collection of name "bb-chaabi".
    ```
