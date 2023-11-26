@@ -1,3 +1,6 @@
+# This file has the llm_searcher functionality that generates results using a cosine similarity when any text input is given to the function.
+# The frontend application app.py imports this functionality and passes the entered query everytime a query is received.
+# This file then generates the corresponding result (best 15 data entries) and sends it back.
 # Libraries import
 import os
 import uvicorn
