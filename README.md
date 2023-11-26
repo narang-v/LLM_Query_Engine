@@ -44,11 +44,12 @@
 # Frontend Interface
 1. The Frontend interface is made using Flask (supported by Python).
 2. The app.py is the file that loads the flask app, with its frontend dependencies available in 'static' and 'templates' folder.
+3. The "app.py" imports its 'llm_searcher' from the "search_main.py" file which contains the function to generate the results of a sample query based on the best similarity scores achieved.
    ```
    python app.py
    ```
-3. This creates a local host on the computer with the address http://127.0.0.1:5000/
-4. This address displays the frontend page where the query search engine works.
+4. This creates a local host on the computer with the address http://127.0.0.1:5000/
+5. This address displays the frontend page where the query search engine works.
 
 # Video Tutorial
 This video tutorial shows the qdrant setup as well as the running of the frontend application with the collection "bb-chaabi".
